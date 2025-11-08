@@ -1,0 +1,74 @@
+├── .env
+├── docs
+│   ├── notes.txt
+│   ├── structure.js
+│   └── structure.txt
+├── logs
+├── package-lock.json
+├── package.json
+├── public
+├── server.js
+├── src
+│   ├── app.js
+│   ├── config
+│   │   ├── config.json
+│   │   ├── db.js
+│   │   ├── env.js
+│   │   ├── firebase.js
+│   │   ├── firebaseServiceAccount.json
+│   │   └── history_db.js
+│   ├── controllers
+│   │   ├── admin
+│   │   │   ├── authController.js
+│   │   │   └── transactionController.js
+│   │   ├── client
+│   │   └── ipController.js
+│   ├── email_templates
+│   │   ├── forgotTemplate.js
+│   │   └── verifyOTPTemplate.js
+│   ├── helpers
+│   │   ├── currency.js
+│   │   ├── functions.js
+│   │   ├── slug.js
+│   │   └── static_page_html.js
+│   ├── middlewares
+│   │   ├── globalAuth.js
+│   │   ├── logger.js
+│   │   └── rateLimiter.js
+│   ├── routes
+│   │   ├── index.js
+│   │   ├── v1
+│   │   │   ├── admin
+│   │   │   │   ├── auth.routes.js
+│   │   │   │   └── index.js
+│   │   │   ├── client
+│   │   │   │   └── index.js
+│   │   │   └── index.js
+│   │   └── v2
+│   ├── services
+│   │   ├── mailer.js
+│   │   ├── mailerV2.js
+│   │   ├── notify.js
+│   │   ├── smsService.js
+│   │   └── transactionService.js
+│   └── utils
+│       ├── appError.js
+│       ├── asyncErrorHandler.js
+│       ├── catchAsync.js
+│       ├── dbHelper.js
+│       ├── encryptDecryptHandler.js
+│       ├── errorController.js
+│       └── responseHandler.js
+└── tests
+    ├── controllers
+    │   ├── admin.test.js
+    │   └── client.test.js
+    ├── routes
+    │   ├── v1
+    │   │   ├── admin.test.js
+    │   │   └── client.test.js
+    │   └── v2
+    ├── services
+    │   ├── mailer.test.js
+    │   └── smsService.test.js
+    └── utils

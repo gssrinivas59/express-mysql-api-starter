@@ -1,0 +1,66 @@
+npm init -y
+npm install express dotenv crypto-js bcryptjs cors mysql2 nodemailer jsonwebtoken compression axios
+npm install --save-dev nodemon
+npm install cross-env --save-dev
+npm install express-rate-limit
+npm install rate-limit-redis ioredis
+
+
+npm install helmet
+const helmet = require('helmet');
+app.use(helmet());
+
+npm install hpp
+const hpp = require('hpp');
+app.use(hpp());
+
+
+const mongoSanitize = require('express-mongo-sanitize');
+app.use(mongoSanitize());
+
+
+
+const conn = await pool.getConnection();
+try {
+  await conn.beginTransaction();
+  // multiple queries here
+  await conn.commit();
+} catch (err) {
+  await conn.rollback();
+  throw new AppError(err.message, 500);
+} finally {
+  conn.release();
+}
+
+
+
+const sendMail = require('./services/mailer');
+
+async function testMail() {
+  try {
+    const info = await sendMail({
+      to: 'user@example.com',
+      subject: 'Test Email',
+      text: 'Hello from Node.js!',
+      html: '<b>Hello from Node.js!</b>',
+    });
+    console.log('Email sent:', info.messageId);
+  } catch (err) {
+    console.error('Error sending email:', err.message);
+  }
+}
+
+testMail();
+
+
+
+
+
+git init
+git add .
+git commit -m "Initial commit: Node.js API Starter with MySQL"
+git remote add origin https://github.com/gssrinivas59/express-mysql-api-starter.git
+git branch -M main
+git pull origin main --allow-unrelated-histories
+//git push origin main
+git push origin main --force

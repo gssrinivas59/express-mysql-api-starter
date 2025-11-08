@@ -1,0 +1,33 @@
+{
+  "id": 1,
+  "name": "express-mysql-api-starter",
+  "full_name": "express-mysql-api-starter",
+  "logo_image": "*.png",
+  "logo_dark_image": null,
+  "favicon": null,
+  "copyright": "© 2025. All rights reserved.",
+  "show_delete_account": true,
+  "contact_us": {
+    "email": "",
+    "address": null,
+    "phone": ""
+  },
+  "static_pages": {
+    "faq": null,
+    "terms_condition": null,
+    "privacy_policy": null,
+    "refund_policy": null,
+    "about_us": null
+  },
+  "app_links": {
+    "web": "",
+    "play_store": "",
+    "app_store": ""
+  },
+  "social_links": {
+    "facebook": null,
+    "twitter": null,
+    "youtube": null,
+    "instagram": null
+  }
+}
